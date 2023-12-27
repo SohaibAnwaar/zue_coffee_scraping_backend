@@ -46,7 +46,7 @@ class Command(BaseCommand):
                     name = shop_data.get('name')
                     location = shop_data.get('location')
                     gmaps = googlemaps.Client(key=settings.GOOGLE_MAPS_API_KEY)
-                    breakpoint()
+
                     # Geocoding an address
                     try:
                         geocode_result = gmaps.geocode(location)
